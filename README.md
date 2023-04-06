@@ -13,3 +13,14 @@ For news items that trigger similar emotional responses, we compiled them into t
 We benchmark models on this dataset that predict a person’s dominant emotional response toward the target news item (single-label prediction)."""
 
 ![image](https://user-images.githubusercontent.com/80212154/230265848-8c43230a-e838-4442-ace9-5bd4a97f66fa.png)
+The model predicts the input as negative mood, however, it should be neutral or even positive based on human standard;
+
+![image](https://user-images.githubusercontent.com/80212154/230266516-cfc8c6c5-60e8-4767-a346-19e16f584f6e.png)
+trialed tokenization categorization with different aggregation_strategy including first, average, max and simple. None provides optimal results
+
+Text Summarization provides result that's close to meaning of the input.
+
+Trialed text translation from english to chinese with model = "liam168/trans-opus-mt-en-zh";
+
+![image](https://user-images.githubusercontent.com/80212154/230267075-97401806-97eb-4502-988c-e804b39f5ab6.png)
+text generation provides results relavent to the emotions of the texts;Since default pipeline is based on emotion classification;
